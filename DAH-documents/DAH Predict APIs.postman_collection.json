@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "138251fb-affe-4a3d-aafb-693f8d56bca2",
+		"name": "DAH Predict APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Docment Classification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "shippargi",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "model_name",
+							"value": "Doc Classification",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "text",
+							"value": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old",
+							"type": "text"
+						},
+						{
+							"key": "trainingTracker_id",
+							"value": "5f8d919a81b551558f8c2e92",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://121.244.33.115:5672/api/predict",
+					"protocol": "http",
+					"host": [
+						"121",
+						"244",
+						"33",
+						"115"
+					],
+					"port": "5672",
+					"path": [
+						"api",
+						"predict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Instance Segmentation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "shippargi",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "model_name",
+							"value": "Doc Classification",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/OneDrive - Xpanxion/Desktop/trainingframework/Files/InstanceSegmentation/Page_00001.jpg"
+						},
+						{
+							"key": "trainingTracker_id",
+							"value": "6005199681b55155aa94f1b4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://121.244.33.115:5672/api/predict",
+					"protocol": "http",
+					"host": [
+						"121",
+						"244",
+						"33",
+						"115"
+					],
+					"port": "5672",
+					"path": [
+						"api",
+						"predict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invoice Extraction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "shippargi",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "model_name",
+							"value": "Doc Classification",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/OneDrive - Xpanxion/Desktop/trainingframework/Files/InvoiceExtraction/13.jpg"
+						},
+						{
+							"key": "trainingTracker_id",
+							"value": "6005199681b55155aa94f1b5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://121.244.33.115:5672/api/predict",
+					"protocol": "http",
+					"host": [
+						"121",
+						"244",
+						"33",
+						"115"
+					],
+					"port": "5672",
+					"path": [
+						"api",
+						"predict"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

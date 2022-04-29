@@ -1,0 +1,17 @@
+1. npm run build:staging
+
+2. check dist folder date update or not
+
+3.connect to acops 
+
+4.connect to remote desktop with below username pwd
+	DAH QA/Test Server :- Credentials (PLease don't share below credentials with any one)
+	https://dah-qa.blueconchtech.com
+	Machine Name: XIPL0414
+	IP address: 172.26.68.11
+	Username: 172.26.68.11\xpanxion
+	Password: P@ssword414
+5.In remote machine create today's date folder under backup and take back-up from same machine 
+6.remove old file except back from ai-ml and past new files from local machin D:\workspace\DAH\ai\dist\AI-ML path
+7.Refresh the remote serve and close it
+8. check all working on https://dah-qa.blueconchtech.com:9008/

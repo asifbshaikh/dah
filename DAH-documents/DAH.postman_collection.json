@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "77de518e-d31b-45b8-989c-f400c0b9796e",
+		"name": "DAH",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST Prediction - NER Model",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "dah",
+							"type": "text"
+						},
+						{
+							"key": "model_name",
+							"value": "NER",
+							"type": "text"
+						},
+						{
+							"key": "query",
+							"value": "importent emails",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "121.244.33.115:5672/api/predict",
+					"host": [
+						"121",
+						"244",
+						"33",
+						"115"
+					],
+					"port": "5672",
+					"path": [
+						"api",
+						"predict"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Prediction - Video Analytics",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "dah",
+							"type": "text"
+						},
+						{
+							"key": "model_name",
+							"value": "VideoAnalytics",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/asus/Desktop/abc.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "121.244.33.115:5672/api/predict",
+					"host": [
+						"121",
+						"244",
+						"33",
+						"115"
+					],
+					"port": "5672",
+					"path": [
+						"api",
+						"predict"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Prediction - Object Detection",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "dah",
+							"type": "text"
+						},
+						{
+							"key": "model_name",
+							"value": "ObjectDetection",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/asus/Desktop/abc.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://172.26.21.10:5672/api/predict",
+					"protocol": "http",
+					"host": [
+						"172",
+						"26",
+						"21",
+						"10"
+					],
+					"port": "5672",
+					"path": [
+						"api",
+						"predict"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

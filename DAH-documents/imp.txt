@@ -1,0 +1,8 @@
+DAH QA/Test Server :- Credentials (PLease don't share below credentials with any one)
+https://dah-qa.blueconchtech.com
+Machine Name: XIPL0414
+IP address: 172.26.68.11
+Username: 172.26.68.11\xpanxion
+Password: P@ssword414
+
+ FortiClient
